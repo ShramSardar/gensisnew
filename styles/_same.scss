@@ -1,0 +1,86 @@
+* {
+  max-width: 1360px;
+  margin: auto;
+}
+
+.menu {
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  &__logo {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  &__link {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__projects {
+    grid-column: 22;
+    grid-row: 3/4;
+  }
+
+  &__contact {
+    grid-column-end: 25;
+    grid-row: 3/4;
+  }
+}
+
+.footer {
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  &__logo {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  &__link {
+    font-size: 18px;
+    font-weight: bold;
+    grid-row: 3;
+  }
+
+  &__projects {
+    grid-column: 18;
+    grid-row: 3;
+  }
+
+  &__contact {
+    grid-column: 20;
+    grid-row: 3;
+  }
+
+  &__dribble {
+    grid-column: 22;
+    grid-row: 3;
+  }
+
+  &__instagram {
+    grid-column: 23;
+    grid-row: 3;
+  }
+
+  &__twitter {
+    grid-column: 24;
+    grid-row: 3;
+  }
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: rgb(70, 70, 70);
+}
+
+a:hover {
+  transform: scale(1.25);
+}
